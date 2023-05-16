@@ -1,0 +1,144 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid black;
+}
+h3 {
+  font-size: 1.5em;
+}
+.left-header{
+  width: 50%;
+  line-height: 1.2em;
+  font-size: 1.5em;
+}
+.right-header{
+  width: 50%;
+  text-align: end;
+  line-height: 0.6em;
+
+  & p{
+    font-size: .85em;
+    font-style: italic;
+  }
+}
+
+.name {
+  font-size: 1.45em;
+}
+
+.title {
+  font-size: 1em;
+}
+
+.about {
+  width: 100%;
+  height: 20%;
+  box-sizing: border-box;
+  padding: 1.1em;
+  font-size: 1.4em;
+  line-height: 1.3em;
+  text-align: justify;
+  margin-top: 2.1em;
+}
+
+.projects, .profesional-experience, .education, .technologies {
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 1.6em;
+  line-height: 1.9em;
+  & h3 {
+    font-size: 1.8em;
+  }
+  & p{
+    font-size: 1.5em;
+    & span {
+      font-weight: bolder;
+    }
+  }
+  & ul {
+    font-size: 1.4em;
+  }
+}
+.profesional-experience {
+  padding-top: 45px;
+}
+
+.individual-project, .individual-experience{
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 2.6rem;
+
+}
+
+.project-header, .experience-header{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+}
+.project-title, .experience-title {
+  box-sizing: border-box;
+  width: 85%;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+.project-date, .experience-date {
+  box-sizing: border-box;
+  width: 15%;
+  font-size: 1.25em;
+  text-align: end;
+}
+
+.experience-type, .professional-type {
+  font-size: 1.55em;
+}
+.first-experience-type {
+  margin-top: 0.3em;
+}
+
+.experience-location, .prof-location {
+  font-size: 1.55em;
+}
+.project-functions, .prof-functions {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.4em;
+  margin-top: 1.6em;
+}
+.functions-related, .front-description, .back-description, .bdd-description, .url-repo {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.3em;
+}
+.functions-end {
+  margin-bottom: 1em;
+}
+
+button {
+  width: 800px;
+  height: 100px;
+  font-size: 2.1em;
+}
+
+.experience-container {
+  font-size: 1.1em;
+}
+
+
+
+@media print {
+  @page {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .container {
+    padding-top: 42px;
+    padding-bottom: 72px;
+  }
+
+}
